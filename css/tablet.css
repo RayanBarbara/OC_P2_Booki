@@ -1,0 +1,14 @@
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#logo{
+    width: auto;
+    height: auto;
+}
