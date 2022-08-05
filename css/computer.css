@@ -26,15 +26,13 @@ figcaption{
 p, a {
     font-family: Raleway;
     font-size: 12px;
-    margin-top: 0;
-    margin-bottom: 3px;
+    margin: 0px 0px 3px 0px;
 }
 
 h3, h4, h5{
     font-family: Raleway;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    margin: 10px 0px 7px 0px;
 }
 
 #logo {
@@ -188,6 +186,7 @@ h3, h4, h5{
 #accommodation-nav{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 #accommodation-nav > article {
@@ -198,11 +197,8 @@ h3, h4, h5{
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 5px 5px #E0DDDD;
-    margin-right: 10px;
-    margin-left: 16px;
-    margin-bottom: 10px;
-    padding-top: 2px;
-    padding-left: 4px;
+    margin: 0px 10px 10px 16px;
+    padding: 2px 0px 0px 4px;
     width: min-content;
     max-width: 180px;
     cursor: pointer;
@@ -311,26 +307,25 @@ h3, h4, h5{
 
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 10%;
     background-color: #F2F2F2;
     margin-top: 30px;
 }
 
 footer a{
-    position: relative;
-    right: 36px;
     color: black;
     text-decoration: none;
 }
 
 footer a:hover{
     color: #0065FC;
-
 }
 
 .footer-nav{
     display: flex;
     flex-flow: column wrap;
+    align-items: flex-start;
     list-style: none;
 }
 
