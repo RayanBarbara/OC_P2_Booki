@@ -1,14 +1,64 @@
-nav{
+body{
+    margin: 0px;
+}
+
+header {
     display: flex;
-    justify-content: flex-end;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 32px;
 }
 
-img{
+img {
     max-width: 100%;
-    height: auto;
 }
 
-#logo{
-    width: auto;
-    height: auto;
+figure{
+    margin: 0;
+}
+
+figcaption{
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+p, a {
+    font-family: Raleway;
+    font-size: 14px;
+}
+
+h3, h4, h5{
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+#logo {
+    width: 120px;
+    height: 55px;
+}
+
+#nav-menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.nav-button {
+    font-size: 18px;
+    color: black;
+}
+
+.nav-button:hover {
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+}
+
+#introduction h4{
+    font-size: 22px;
+}
+
+#introduction p{
+    font-size: 16px;
 }

@@ -25,8 +25,7 @@ figcaption{
 
 p, a {
     font-family: Raleway;
-    font-size: 12px;
-    margin: 0px 0px 3px 0px;
+    font-size: 14px;
 }
 
 h3, h4, h5{
@@ -47,11 +46,11 @@ h3, h4, h5{
     margin: 16px;
 }
 
-.nav-button:hover {
+/*.nav-button:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 38px;
-}
+}*/
 
 #introduction{
     padding: 16px 0px 0px 16px;
@@ -63,14 +62,14 @@ h3, h4, h5{
 }
 
 #search-form {
-    height: 42px;
+    height: 41px;
     border: 1px solid #F2F2F2;
     border-radius: 13px;
     overflow: hidden;
 }
 
 #location-icon{
-    padding: 15px;
+    padding: 16px;
     border-radius: 5px 0px 5px 0px;
     background-color: #F2F2F2;
 }
@@ -90,14 +89,18 @@ h3, h4, h5{
     font-weight: 700;
 }
 
-#search-button {
+#search-form .fa-magnifying-glass{
+    visibility: hidden;
+}
+
+#search-button{
     color: #fff;
-    font-size: 14px;
     font-weight: bold;
     height: 48px;
     width: 80px;
     border-width: 0;
     background-color: #0065FC;
+    padding: 3px;
     cursor: pointer;
 }
 
