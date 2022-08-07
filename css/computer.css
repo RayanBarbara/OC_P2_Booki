@@ -68,6 +68,10 @@ h3, h4, h5{
     overflow: hidden;
 }
 
+#search-form .fa-magnifying-glass{
+    visibility: hidden;
+}
+
 #location-icon{
     padding: 16px;
     border-radius: 5px 0px 5px 0px;
@@ -87,10 +91,6 @@ h3, h4, h5{
     font-family: Raleway;
     font-size: 14px;
     font-weight: 700;
-}
-
-#search-form .fa-magnifying-glass{
-    visibility: hidden;
 }
 
 #search-button{
@@ -251,7 +251,13 @@ h3, h4, h5{
     padding-top: 4px;
     padding-left: 2px;
     cursor: pointer;
-  }
+}
+
+.popular-information{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
 
 .popular-picture{
     float: left;
@@ -261,10 +267,6 @@ h3, h4, h5{
     object-fit: cover;
     padding-right: 10px;
     margin-top: -2px;
-}
-
-.popular-item figcaption{
-    margin-bottom: 30px;
 }
 
 #activities-content{
