@@ -1,5 +1,10 @@
-body{
+body {
     margin: 0px;
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -12,26 +17,29 @@ img {
     max-width: 100%;
 }
 
-figure{
-    margin: 0;
+figure {
+    margin: 0px;
+    padding: 0px;
 }
 
-figcaption{
+figcaption {
     font-family: Raleway;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-p, a {
+p,
+a {
     font-family: Raleway;
     font-size: 14px;
 }
 
-h3, h4, h5{
+h3,
+h4,
+h5 {
     font-family: Raleway;
     font-weight: 700;
-    color: aqua;
 }
 
 #logo {
@@ -41,7 +49,7 @@ h3, h4, h5{
     height: 55px;
 }
 
-#nav-menu{
+#nav-menu {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -57,19 +65,18 @@ h3, h4, h5{
     flex: 1;
     text-align: center;
     margin: 0;
-  }
-  
-  
-.nav-button:hover {
-    color: #0065FC;
-    border-bottom: 2px solid #0065FC;
 }
 
-#introduction h4{
+#introduction {
+    padding: 0px 0px 0px 16px;
+}
+
+#introduction h4 {
     font-size: 22px;
+    margin-bottom: 9px;
 }
 
-#introduction p{
+#introduction p {
     font-size: 16px;
 }
 
@@ -85,54 +92,288 @@ h3, h4, h5{
     overflow: hidden;
 }
 
-#search-form .fa-magnifying-glass{
-    position: relative;
-    bottom: 20px;
-    visibility: visible;
-}
-
-#location-icon{
+#location-icon {
     padding: 16px;
     border-radius: 5px 0px 5px 0px;
     background-color: #F2F2F2;
 }
 
 #search-input {
-    border-width: 0;
+    border-width: 0px;
 }
 
-#search-input:focus{
+#search-button {
+    color: #fff;
+    font-weight: bold;
+    height: 48px;
+    width: 40px;
+    border-width: 0px;
+    background-color: #0065FC;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#search-form .fa-magnifying-glass {
+    position: relative;
+    bottom: 20px;
+    visibility: visible;
+}
+
+#search-button p {
+    visibility: collapse;
+}
+
+#filter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0px 0px 16px;
+}
+
+#filter-content h3 {
+    margin: 9px 0px 5px 0px;
+}
+
+#filter-nav {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    list-style: none;
+
+}
+
+.filter-item {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px 30px 5px 0px;
+    padding: 9px 9px 9px 9px;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.filter-item:hover {
+    transform: scale(1.1);
+    background-color: #DEEBFF;
+}
+
+.filter-item .fa-solid {
+    position: relative;
+    right: 10px;
+    bottom: 9.5px;
+    color: #0065FC;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #DEEBFF;
+    float: left;
+}
+
+#information-icon {
+    margin-right: 5px;
+    color: #0065FC;
+}
+
+#information-text {
+    padding: 0px 0px 0px 16px;
+}
+
+.title {
+    padding: 0px 0px 0px 10px;
+}
+
+#accommodation-content {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#accommodation-city {
+    display: flex;
+    flex-flow: column wrap;
+    order: 2;
+    margin: 0px;
+    border-radius: 0px;
+    background-color: white;
+}
+
+#accommodation-nav {
+    flex: 1;
+    flex-flow: column wrap;
+    align-self: center;
+}
+
+.accommodation-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    margin: 0px 10px 20px 16px;
+    padding: 2px 0px 0px 4px;
+    width: max-content;
+    max-width: max-content;
+    cursor: pointer;
+}
+
+.accommodation-picture {
+    border-radius: 10px 10px 0px 0px;
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: -2px;
+}
+
+.hotel-information {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 6px;
+}
+
+.accommodation-item p{
+    margin: 0px;
+}
+
+#accommodation-city h5 {
+    align-self: start;
+    cursor: pointer;
+}
+
+#popular-content {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #F2F2F2;
+    order: 1;
+    padding: 0px 9px 0px 9px;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+#popular-head {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#popular-head .fa-solid {
+    position: relative;
+    top: 22px;
+    right: 10px;
+}
+
+.popular-item {
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px 10px 10px 10px;
+    height: 95px;
+    padding-top: 4px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.popular-picture {
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+    width: 110px;
+    height: 95px;
+    object-fit: cover;
+    padding-right: 10px;
+    margin-top: -2px;
+}
+
+#activities-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#activities-nav {
+    flex: 1;
+    align-self: center;
+}
+
+.activity-picture {
+    border-radius: 10px 10px 0px 0px;
+    width: 300px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.long-activity-card, .medium-activity-card, .small-activity-card{
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    margin: 0px 10px 20px 16px;
+    width: max-content;
+    max-width: max-content;
+    cursor: pointer;
+}
+
+.long-activity-card figure, .medium-activity-card figure, .small-activity-card figure{
+    padding-bottom: 9px;
+}
+
+.long-activity-card figcaption, .medium-activity-card figcaption, .small-activity-card figcaption{
+    margin: 5px 0px 0px 9px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10%;
+    background-color: #F2F2F2;
+    margin-top: 30px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0065FC;
+}
+
+.footer-nav {
+    display: flex;
+    flex-flow: column wrap;
+    list-style: none;
+}
+
+.footer-item {
+    margin-top: 6px;
+}
+
+.nav-button:hover {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+}
+
+#search-input:focus {
     outline: none;
 }
 
-#search-input::placeholder{
+#search-input::placeholder {
     color: black;
     font-family: Raleway;
     font-size: 14px;
     font-weight: 700;
 }
 
-#search-button{
-    color: #fff;
-    font-weight: bold;
-    height: 48px;
-    width: 40px;
-    border-width: 0;
-    background-color: #0065FC;
-    padding: 3px;
-    cursor: pointer;
+#search-button:hover,
+#search-button:active {
+    background-color: #0065FCB7;
 }
 
-#search-button:hover, #search-button:active{
-    background-color: #0065fcb7;
+.filter-item .fa-solid::before {
+    line-height: 2.5;
 }
 
-#search-button p{
-    visibility: collapse;
-}
-
-#filter-nav{
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: -32px;
+.accommodation-item:hover,
+.popular-item:hover,
+.long-activity-card:hover,
+.medium-activity-card:hover,
+.small-activity-card:hover {
+    background-color: #DEEBFF;
+    transform: scale(1.01);
 }
