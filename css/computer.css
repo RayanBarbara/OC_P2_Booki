@@ -159,7 +159,7 @@ h5 {
 #accommodation-nav {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: center ;
 }
 
 #accommodation-nav>article {
@@ -177,10 +177,14 @@ h5 {
     cursor: pointer;
 }
 
+.accommodation-item p{
+    margin: 1px 0px 2px 0px;
+}
+
 .accommodation-picture {
     border-radius: 10px 10px 0px 0px;
     width: 180px;
-    height: 100px;
+    height: 90px;
     object-fit: cover;
     margin-left: -2px;
 }
@@ -189,10 +193,13 @@ h5 {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
+    margin-left: 3px;
 }
 
 #accommodation-city h5 {
-    align-self: start;
+    position: relative;
+    left: 42px;
+    flex-basis: 100%;
     cursor: pointer;
 }
 
