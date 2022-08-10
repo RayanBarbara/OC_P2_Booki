@@ -149,26 +149,21 @@ h5 {
     height: 20px;
     line-height: 20px;
     text-align: center;
-    margin: 0px 30px 5px 0px;
-    padding: 9px 9px 9px 9px;
+    margin: 0px 30px 15px 0px;
+    padding: 6px 6px 6px 6px;
     border: 2px solid #F2F2F2;
     border-radius: 20px;
     cursor: pointer;
-    overflow: hidden;
-}
-
-.filter-item:hover {
     transform: scale(1.1);
-    background-color: #DEEBFF;
 }
 
 .filter-item .fa-solid {
     position: relative;
-    right: 10px;
-    bottom: 9.5px;
+    right: 6px;
+    bottom: 6px;
     color: #0065FC;
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 30px;
     border-radius: 20px;
     background-color: #DEEBFF;
     float: left;
@@ -232,7 +227,7 @@ h5 {
     margin-left: 6px;
 }
 
-.accommodation-item p{
+.accommodation-item p {
     margin: 0px;
 }
 
@@ -299,7 +294,9 @@ h5 {
     object-fit: cover;
 }
 
-.long-activity-card, .medium-activity-card, .small-activity-card{
+.long-activity-card,
+.medium-activity-card,
+.small-activity-card {
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
     margin: 0px 10px 20px 16px;
@@ -308,11 +305,15 @@ h5 {
     cursor: pointer;
 }
 
-.long-activity-card figure, .medium-activity-card figure, .small-activity-card figure{
+.long-activity-card figure,
+.medium-activity-card figure,
+.small-activity-card figure {
     padding-bottom: 9px;
 }
 
-.long-activity-card figcaption, .medium-activity-card figcaption, .small-activity-card figcaption{
+.long-activity-card figcaption,
+.medium-activity-card figcaption,
+.small-activity-card figcaption {
     margin: 5px 0px 0px 9px;
 }
 
@@ -328,10 +329,6 @@ footer {
 footer a {
     color: black;
     text-decoration: none;
-}
-
-footer a:hover {
-    color: #0065FC;
 }
 
 .footer-nav {
@@ -365,6 +362,11 @@ footer a:hover {
     background-color: #0065FCB7;
 }
 
+.filter-item:hover {
+    transform: scale(1.15);
+    background-color: #DEEBFF;
+}
+
 .filter-item .fa-solid::before {
     line-height: 2.5;
 }
@@ -376,4 +378,8 @@ footer a:hover {
 .small-activity-card:hover {
     background-color: #DEEBFF;
     transform: scale(1.01);
+}
+
+footer a:hover {
+    color: #0065FC;
 }
