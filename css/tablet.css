@@ -16,13 +16,6 @@ figure {
     margin: 0px;
 }
 
-figcaption {
-    font-family: Raleway;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
 p,
 a {
     font-family: Raleway;
@@ -74,18 +67,28 @@ h5 {
     border-width: 0px;
 }
 
-#search-button {
+#search-button-text{
+    display: none;
+}
+
+#search-button-icon{
     color: #fff;
-    font-weight: 700;
-    width: 80px;
+    font-weight: bold;
+    height: 48px;
+    width: 40px;
     border-width: 0px;
     background-color: #0065FC;
-    padding: 3px;
     cursor: pointer;
 }
 
 #search-form .fa-magnifying-glass {
-    visibility: hidden;
+    position: relative;
+    bottom: 4px;
+    visibility: visible;
+}
+
+#search-button p {
+    visibility: collapse;
 }
 
 #filter-content {
@@ -167,10 +170,6 @@ h5 {
     cursor: pointer;
 }
 
-.accommodation-item p {
-    margin: 1px 0px 2px 0px;
-}
-
 .accommodation-picture,
 .popular-picture {
     border-radius: 10px 10px 0px 0px;
@@ -183,15 +182,15 @@ h5 {
 .hotel-information {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
     margin-left: 3px;
 }
 
-#accommodation-city h5 {
-    position: relative;
-    left: 42px;
-    flex-basis: 100%;
-    cursor: pointer;
+.hotel-information h5{
+    margin: 0px;
+}
+
+.hotel-information p{
+    margin: 1px 0px 2px 0px;
 }
 
 #popular-content {
@@ -245,16 +244,11 @@ h5 {
     cursor: pointer;
 }
 
-.long-activity-card figure,
-.medium-activity-card figure,
-.small-activity-card figure {
-    padding-bottom: 9px;
-}
-
-.long-activity-card figcaption,
-.medium-activity-card figcaption,
-.small-activity-card figcaption {
-    margin: 5px 0px 0px 9px;
+.long-activity-card h5,
+.medium-activity-card h5,
+.small-activity-card h5{
+    text-align: center;
+    margin: 12px 0px 10px 0px;
 }
 
 footer {
@@ -273,6 +267,11 @@ footer a {
     display: flex;
     flex-flow: column wrap;
     list-style: none;
+}
+
+.footer-list{
+    list-style: none;
+    padding: 0px;
 }
 
 .footer-item {
@@ -297,8 +296,8 @@ footer a {
     font-weight: 700;
 }
 
-#search-button:hover,
-#search-button:active {
+#search-button-icon:hover,
+#search-button-icon:active {
     background-color: #0065FCB7;
 }
 
@@ -320,6 +319,6 @@ footer a {
     transform: scale(1.03);
 }
 
-footer a:hover {
+#accommodation-show-more:hover, footer a:hover {
     color: #0065FC;
 }

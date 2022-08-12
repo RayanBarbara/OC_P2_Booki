@@ -16,13 +16,6 @@ figure {
     margin: 0px;
 }
 
-figcaption {
-    font-family: Raleway;
-    font-size: 12px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
 p,
 a {
     font-family: Raleway;
@@ -74,14 +67,21 @@ h5 {
     border-width: 0px;
 }
 
-#search-button {
+#search-button-text {
+    position: relative;
+    bottom: 2px;
+    left: 10px;
     color: #fff;
     font-weight: 700;
-    width: 80px;
+    height: 50px;
     border-width: 0px;
     background-color: #0065FC;
     padding: 3px;
     cursor: pointer;
+}
+
+#search-button-icon{
+    display: none;
 }
 
 #search-form .fa-magnifying-glass {
@@ -172,29 +172,33 @@ h5 {
     cursor: pointer;
 }
 
-.accommodation-item p {
+.hotel-information h5{
+    margin: 0px;
+}
+
+.hotel-information p{
     margin: 1px 0px 2px 0px;
 }
 
 .accommodation-picture {
     border-radius: 10px 10px 0px 0px;
-    width: 180px;
-    height: 90px;
+    width: 181px;
+    height: 100px;
     object-fit: cover;
     margin-left: -2px;
 }
 
 .hotel-information {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: space-around;
     margin-left: 3px;
 }
 
-#accommodation-city h5 {
+#accommodation-show-more{
     position: relative;
-    left: 42px;
-    flex-basis: 100%;
+    left: 5px;
+    top: 10px;
     cursor: pointer;
 }
 
@@ -280,8 +284,15 @@ h5 {
     width: 10%;
 }
 
+.long-activity-card h5,
+.medium-activity-card h5,
+.small-activity-card h5{
+    margin: 10px 0px 10px 10px;
+}
+
 footer {
     display: flex;
+    justify-content: space-around;
     gap: 10%;
     background-color: #F2F2F2;
     margin-top: 30px;
@@ -292,10 +303,9 @@ footer a {
     text-decoration: none;
 }
 
-.footer-nav {
-    display: flex;
-    flex-flow: column wrap;
+.footer-list{
     list-style: none;
+    padding: 0px;
 }
 
 .footer-item {
@@ -319,8 +329,8 @@ footer a {
     font-weight: 700;
 }
 
-#search-button:hover,
-#search-button:active {
+#search-button-text:hover,
+#search-button-text:active {
     background-color: #0065FCB7;
 }
 
@@ -342,6 +352,6 @@ footer a {
     transform: scale(1.03);
 }
 
-footer a:hover {
+#accommodation-show-more:hover, footer a:hover {
     color: #0065FC;
 }
