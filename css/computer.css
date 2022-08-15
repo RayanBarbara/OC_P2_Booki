@@ -40,11 +40,11 @@ h5 {
     padding: 16px 0px 0px 16px;
 }
 
-#introduction h4{
+#introduction h4 {
     margin-bottom: 0px;
 }
 
-#introduction p{
+#introduction p {
     margin: 5px 0px 5px 0px;
 }
 
@@ -83,7 +83,7 @@ h5 {
     cursor: pointer;
 }
 
-#search-button-icon{
+#search-button-icon {
     display: none;
 }
 
@@ -177,21 +177,22 @@ h5 {
     object-fit: cover;
 }
 
-.hotel-information {
+.accommodation-item .hotel-information {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 3px;
 }
 
-.hotel-information h5{
+.hotel-information h5 {
     margin: 0px;
 }
 
-.hotel-information p{
+.hotel-information p {
     margin: 1px 0px 2px 0px;
 }
 
-#accommodation-show-more{
+#accommodation-show-more {
     position: relative;
     left: 5px;
     top: 10px;
@@ -226,6 +227,14 @@ h5 {
     cursor: pointer;
 }
 
+.popular-item .hotel-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 3px;
+}
+
 .popular-picture {
     float: left;
     border-radius: 10px 0px 0px 10px;
@@ -242,50 +251,68 @@ h5 {
 #activities-nav {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: space-between;
-    gap: 3%;
-    border: 1px solid black;
-    height: 450px;
-    padding: 5px;
-    margin: 0px 16px 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    margin-left: 16px;
 }
 
-.activity-picture {
+.long-activity-picture {
     border-radius: 10px 10px 0px 0px;
-    box-sizing: border-box;
-    max-width: 100px;
-    max-height: 100px;
+    width: 215px;
+    height: 270px;
+    filter: brightness(105%);
+    object-fit: cover;
+}
+
+.medium-activity-picture {
+    border-radius: 10px 10px 0px 0px;
+    width: 215px;
+    height: 110px;
+    filter: brightness(105%);
+    object-fit: cover;
+}
+
+.small-activity-picture {
+    border-radius: 10px 10px 0px 0px;
+    width: 215px;
+    height: 80px;
+    filter: brightness(105%);
+    object-fit: cover;
 }
 
 .long-activity-card {
     flex-basis: 100%;
-    border: 1px dashed red;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
+    max-width: 215px;
+    max-height: 300px;
     cursor: pointer;
 }
 
 .medium-activity-card {
-    flex-basis: 55%;
-    border: 1px dashed blue;
+    flex-basis: 63%;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
+    max-width: 215px;
+    max-height: 140px;
     cursor: pointer;
 }
 
 .small-activity-card {
-    flex-basis: 40%;
-    border: 1px dashed green;
+    flex-basis: 37%;
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
+    max-width: 215px;
+    max-height: 130px;
     cursor: pointer;
 }
 
-.long-activity-card h5,
-.medium-activity-card h5,
-.small-activity-card h5{
-    margin: 10px 0px 10px 10px;
+#activities-nav h5{
+    margin: 0px;
+    position: relative;
+    top: 5px;
+    left: 10px;
 }
 
 footer {
@@ -301,7 +328,7 @@ footer a {
     text-decoration: none;
 }
 
-.footer-list{
+.footer-list {
     list-style: none;
     padding: 0px;
 }
@@ -350,11 +377,12 @@ footer a {
     transform: scale(1.03);
 }
 
-#accommodation-show-more:hover, footer a:hover {
+#accommodation-show-more:hover,
+footer a:hover {
     color: #0065FC;
 }
 
-@media screen and (min-width: 1299px) {
+@media screen and (min-width: 1250px) {
     .accommodation-item {
         flex: 1 1 25%;
         background-color: white;
