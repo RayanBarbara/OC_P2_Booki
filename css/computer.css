@@ -5,7 +5,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 32px;
+    padding-top: 30px;
 }
 
 figure {
@@ -18,6 +18,7 @@ a {
     font-size: 14px;
 }
 
+h2,
 h3,
 h4,
 h5 {
@@ -25,45 +26,45 @@ h5 {
 }
 
 #logo {
-    width: 67px;
-    height: 30px;
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+    width: 70px;
+    height: 35px;
 }
 
 .nav-button {
-    font-size: 14px;
     color: black;
+    font-size: 14px;
     text-decoration: none;
-    margin: 16px;
+    margin: 15px;
 }
 
 #introduction {
-    padding: 16px 0px 0px 16px;
+    padding: 15px 0px 0px 15px;
 }
 
 #introduction h4 {
     margin-bottom: 0px;
 }
 
-#introduction p {
-    margin: 5px 0px 5px 0px;
-}
-
 #search-content {
     display: flex;
-    padding: 10px 0px 0px 16px;
+    padding: 10px 0px 0px 15px;
 }
 
 #search-form {
-    height: 41px;
+
     border: 1px solid #F2F2F2;
     border-radius: 13px;
+    height: 41px;
     overflow: hidden;
 }
 
 #location-icon {
-    padding: 16px;
-    border-radius: 5px 0px 5px 0px;
     background-color: #F2F2F2;
+    border-radius: 5px 0px 5px 0px;
+    padding: 15px;
 }
 
 #search-input {
@@ -76,10 +77,10 @@ h5 {
     left: 10px;
     color: #fff;
     font-weight: 700;
-    height: 50px;
-    border-width: 0px;
     background-color: #0065FC;
+    border-width: 0px;
     padding: 3px;
+    height: 50px;    
     cursor: pointer;
 }
 
@@ -94,7 +95,7 @@ h5 {
 #filter-content {
     display: flex;
     align-items: center;
-    padding: 10px 0px 0px 16px;
+    padding: 10px 0px 0px 15px;
 }
 
 #filter-nav {
@@ -106,13 +107,13 @@ h5 {
     font-family: Raleway;
     font-size: 14px;
     font-weight: 700;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
     height: 20px;
     line-height: 20px;
     text-align: center;
     margin-right: 30px;
-    padding: 6px 6px 6px 6px;
-    border: 2px solid #F2F2F2;
-    border-radius: 20px;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -121,30 +122,30 @@ h5 {
     right: 6px;
     bottom: 6px;
     color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px;
     height: 32px;
     width: 30px;
-    border-radius: 20px;
-    background-color: #DEEBFF;
     float: left;
 }
 
 #information-icon {
-    margin-right: 5px;
     color: #0065FC;
+    margin-right: 5px;
 }
 
 #information-text {
-    padding-left: 16px;
+    padding-left: 15px;
 }
 
 .title {
-    padding: 0px 0px 0px 16px;
+    padding-left: 15px;
 }
 
 #accommodation-content {
     display: flex;
     flex-flow: row wrap;
-    margin-left: 15px;
+    margin: 0px 15px 0px 15px;
 }
 
 #accommodation-city {
@@ -163,7 +164,7 @@ h5 {
 .accommodation-item {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
     margin: 0px 1% 18px 1%;
     padding: 4px;
     max-width: 180px;
@@ -181,7 +182,6 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 3px;
 }
 
 .hotel-information h5 {
@@ -189,7 +189,7 @@ h5 {
 }
 
 .hotel-information p {
-    margin: 1px 0px 2px 0px;
+    margin: 3px 0px 3px 0px;
 }
 
 #accommodation-show-more {
@@ -203,7 +203,6 @@ h5 {
     flex: 1 2 30%;
     background-color: #F2F2F2;
     border-radius: 10px;
-    margin-right: 16px;
 }
 
 #popular-head {
@@ -220,7 +219,7 @@ h5 {
 .popular-item {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
     margin: 0px 15px 30px 15px;
     height: 100px;
     padding: 4px;
@@ -241,11 +240,10 @@ h5 {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    margin-left: 3px;
 }
 
 #activities-content {
-    padding-left: 16px;
+    padding-left: 15px;
 }
 
 #activities-nav {
@@ -253,8 +251,8 @@ h5 {
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
+    margin-left: 15px; 
     height: 300px;
-    margin-left: 16px;
 }
 
 .long-activity-picture {
@@ -284,7 +282,7 @@ h5 {
 .long-activity-card {
     flex-basis: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
     max-width: 215px;
     max-height: 300px;
     cursor: pointer;
@@ -293,7 +291,7 @@ h5 {
 .medium-activity-card {
     flex-basis: 63%;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
     max-width: 215px;
     max-height: 140px;
     cursor: pointer;
@@ -302,17 +300,17 @@ h5 {
 .small-activity-card {
     flex-basis: 37%;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
     max-width: 215px;
     max-height: 130px;
     cursor: pointer;
 }
 
 #activities-nav h5{
-    margin: 0px;
     position: relative;
     top: 5px;
     left: 10px;
+    margin: 0px;
 }
 
 footer {
@@ -334,13 +332,13 @@ footer a {
 }
 
 .footer-item {
-    margin-top: 6px;
+    margin-top: 5px;
 }
 
 .nav-button:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 30px;
+    padding-top: 27px;
 }
 
 #search-input:focus {
@@ -360,8 +358,8 @@ footer a {
 }
 
 .filter-item:hover {
-    transform: scale(1.1);
     background-color: #DEEBFF;
+    transform: scale(1.1);
 }
 
 .filter-item .fa-solid::before {
@@ -387,7 +385,7 @@ footer a:hover {
         flex: 1 1 25%;
         background-color: white;
         border-radius: 10px;
-        box-shadow: 0px 0px 3px 3px #F2F2F2;
+        box-shadow: 0px 0px 5px 5px #F2F2F2;
         margin: 0px 3% 18px 3%;
         padding: 4px;
         max-width: 180px;
@@ -400,7 +398,7 @@ footer a:hover {
         flex: 1 1 25%;
         background-color: white;
         border-radius: 10px;
-        box-shadow: 0px 0px 3px 3px #F2F2F2;
+        box-shadow: 0px 0px 5px 5px #F2F2F2;
         margin: 0px 5% 18px 5%;
         padding: 4px;
         max-width: 180px;
@@ -413,7 +411,7 @@ footer a:hover {
         flex: 1 1 25%;
         background-color: white;
         border-radius: 10px;
-        box-shadow: 0px 0px 3px 3px #F2F2F2;
+        box-shadow: 0px 0px 5px 5px #F2F2F2;
         margin: 0px 7% 18px 7%;
         padding: 4px;
         max-width: 180px;

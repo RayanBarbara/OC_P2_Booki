@@ -5,11 +5,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 32px;
-}
-
-img {
-    max-width: 100%;
+    padding-top: 30px;
 }
 
 figure {
@@ -22,35 +18,34 @@ a {
     font-size: 14px;
 }
 
+h2,
 h3,
 h4,
 h5 {
     font-family: Raleway;
-    font-weight: 700;
 }
 
 #logo {
-    width: 67px;
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+    width: 65px;
     height: 30px;
 }
 
 .nav-button {
-    font-size: 14px;
     color: black;
+    font-size: 14px;
     text-decoration: none;
-    margin: 16px;
+    margin: 15px;
 }
 
 #introduction {
-    padding: 16px 0px 0px 16px;
+    padding: 15px 0px 0px 15px;
 }
 
 #introduction h4 {
     margin-bottom: 0px;
-}
-
-#introduction p {
-    margin: 5px 0px 5px 0px;
 }
 
 #search-content {
@@ -59,33 +54,32 @@ h5 {
 }
 
 #search-form {
-    height: 41px;
     border: 1px solid #F2F2F2;
     border-radius: 13px;
+    height: 41px;
     overflow: hidden;
 }
 
 #location-icon {
-    padding: 16px;
     border-radius: 5px 0px 5px 0px;
     background-color: #F2F2F2;
+    padding: 15px;
 }
 
 #search-input {
     border-width: 0px;
 }
 
-#search-button-text{
+#search-button-text {
     display: none;
 }
 
-#search-button-icon{
+#search-button-icon {
     color: #fff;
-    font-weight: bold;
-    height: 48px;
-    width: 40px;
     border-width: 0px;
     background-color: #0065FC;
+    height: 49px;
+    width: 40px;
     cursor: pointer;
 }
 
@@ -102,7 +96,7 @@ h5 {
 #filter-content {
     display: flex;
     align-items: center;
-    padding: 10px 0px 0px 16px;
+    padding: 10px 0px 0px 15px;
 }
 
 #filter-nav {
@@ -114,13 +108,13 @@ h5 {
     font-family: Raleway;
     font-size: 14px;
     font-weight: 700;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
     height: 20px;
     line-height: 20px;
     text-align: center;
     margin-right: 30px;
-    padding: 6px 6px 6px 6px;
-    border: 2px solid #F2F2F2;
-    border-radius: 20px;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -129,36 +123,36 @@ h5 {
     right: 6px;
     bottom: 6px;
     color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px;
     height: 32px;
     width: 30px;
-    border-radius: 20px;
-    background-color: #DEEBFF;
     float: left;
 }
 
 #information-icon {
-    margin-right: 5px;
     color: #0065FC;
+    margin-right: 5px;
 }
 
 #information-text {
-    padding-left: 16px;
+    padding-left: 15px;
 }
 
 .title {
-    padding: 0px 0px 0px 16px;
+    padding-left: 15px;
 }
 
 #accommodation-content {
     display: flex;
-    margin-left: 16px;
+    margin: 0px 15px 0px 15px;
 }
 
 #accommodation-city {
+    flex: 1 1 66%;
     background-color: #F2F2F2;
     border-radius: 10px;
-    margin-right: 16px;
-    width: 66%;
+    margin-right: 15px;
 }
 
 #accommodation-nav {
@@ -171,7 +165,7 @@ h5 {
 .popular-item {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px #F2F2F2;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
     margin: 0px 5px 10px 5px;
     padding: 4px;
     max-width: 210px;
@@ -192,12 +186,12 @@ h5 {
     margin-left: 3px;
 }
 
-.hotel-information h5{
+.hotel-information h5 {
     margin: 0px;
 }
 
-.hotel-information p{
-    margin: 1px 0px 2px 0px;
+.hotel-information p {
+    margin: 3px 0px 3px 0px;
 }
 
 #accommodation-show-more {
@@ -212,7 +206,7 @@ h5 {
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 10px;
-    margin: 0px 16px 0px 16px;
+    margin: 0px 15px 0px 15px;
 }
 
 #popular-head {
@@ -227,7 +221,8 @@ h5 {
 }
 
 #popular-content {
-    width: 33%;
+    flex: 1 1 33%;
+    margin: 0px;
 }
 
 #popular-nav {
@@ -252,19 +247,17 @@ h5 {
 .long-activity-card,
 .medium-activity-card,
 .small-activity-card {
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 0px 3px 3px #F2F2F2;
-    margin: 0px 7px 20px 7px;
-    width: max-content;
-    max-width: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #F2F2F2;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
 .long-activity-card h5,
 .medium-activity-card h5,
-.small-activity-card h5{
+.small-activity-card h5 {
     text-align: center;
-    margin: 12px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 footer {
@@ -285,20 +278,20 @@ footer a {
     list-style: none;
 }
 
-.footer-list{
+.footer-list {
     list-style: none;
     padding: 0px;
 }
 
 .footer-item {
-    margin-top: 6px;
+    margin-top: 5px;
     padding: 0px;
 }
 
 .nav-button:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 30px;
+    padding-top: 27px;
 }
 
 #search-input:focus {
@@ -335,6 +328,7 @@ footer a {
     transform: scale(1.03);
 }
 
-#accommodation-show-more:hover, footer a:hover {
+#accommodation-show-more:hover,
+footer a:hover {
     color: #0065FC;
 }
