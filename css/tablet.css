@@ -45,9 +45,17 @@ h5 {
     padding: 16px 0px 0px 16px;
 }
 
+#introduction h4 {
+    margin-bottom: 0px;
+}
+
+#introduction p {
+    margin: 5px 0px 5px 0px;
+}
+
 #search-content {
     display: flex;
-    padding: 16px 0px 0px 16px;
+    padding: 10px 0px 0px 16px;
 }
 
 #search-form {
@@ -94,7 +102,7 @@ h5 {
 #filter-content {
     display: flex;
     align-items: center;
-    padding: 16px 0px 0px 16px;
+    padding: 10px 0px 0px 16px;
 }
 
 #filter-nav {
@@ -134,7 +142,7 @@ h5 {
 }
 
 #information-text {
-    padding: 0px 0px 16px 16px;
+    padding-left: 16px;
 }
 
 .title {
@@ -165,7 +173,7 @@ h5 {
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
     margin: 0px 5px 10px 5px;
-    padding: 2px 0px 0px 4px;
+    padding: 4px;
     max-width: 210px;
     cursor: pointer;
 }
@@ -176,7 +184,6 @@ h5 {
     width: 210px;
     height: 105px;
     object-fit: cover;
-    margin-left: -2px;
 }
 
 .hotel-information {
@@ -191,6 +198,13 @@ h5 {
 
 .hotel-information p{
     margin: 1px 0px 2px 0px;
+}
+
+#accommodation-show-more {
+    position: relative;
+    left: 5px;
+    top: 10px;
+    cursor: pointer;
 }
 
 #popular-content {
@@ -226,7 +240,9 @@ h5 {
     justify-content: space-evenly;
 }
 
-.activity-picture {
+.long-activity-picture,
+.medium-activity-picture,
+.small-activity-picture {
     border-radius: 10px 10px 0px 0px;
     width: 235px;
     height: 150px;

@@ -195,6 +195,7 @@ h5 {
     flex-flow: column wrap;
     order: 2;
     margin: 0px;
+    padding-left: 9px;
     border-radius: 0px;
     background-color: white;
 }
@@ -210,7 +211,7 @@ h5 {
     border-radius: 10px;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
     margin: 0px 10px 20px 16px;
-    padding: 2px 0px 0px 4px;
+    padding: 4px;
     width: max-content;
     max-width: max-content;
     cursor: pointer;
@@ -221,7 +222,6 @@ h5 {
     width: 300px;
     height: 100px;
     object-fit: cover;
-    margin-left: -2px;
 }
 
 .hotel-information {
@@ -236,6 +236,14 @@ h5 {
 
 .hotel-information p{
     margin: 1px 0px 2px 0px;
+}
+
+#accommodation-show-more {
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 #popular-content {
@@ -262,10 +270,10 @@ h5 {
 .popular-item {
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px #F2F2F2;
     margin: 0px 10px 10px 10px;
-    height: 95px;
-    padding-top: 4px;
-    padding-left: 2px;
+    height: 100px;
+    padding: 4px;
     cursor: pointer;
 }
 
@@ -273,23 +281,32 @@ h5 {
     float: left;
     border-radius: 10px 0px 0px 10px;
     width: 110px;
-    height: 95px;
+    height: 100px;
     object-fit: cover;
     padding-right: 10px;
-    margin-top: -2px;
+}
+
+.popular-item .hotel-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 3px;
 }
 
 #activities-content {
     display: flex;
     flex-direction: column;
+    padding-left: 9px;
 }
 
 #activities-nav {
-    flex: 1;
     align-self: center;
 }
 
-.activity-picture {
+.long-activity-picture,
+.medium-activity-picture,
+.small-activity-picture {
     border-radius: 10px 10px 0px 0px;
     width: 300px;
     height: 130px;

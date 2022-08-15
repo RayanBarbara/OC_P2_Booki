@@ -227,14 +227,6 @@ h5 {
     cursor: pointer;
 }
 
-.popular-item .hotel-information {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin-left: 3px;
-}
-
 .popular-picture {
     float: left;
     border-radius: 10px 0px 0px 10px;
@@ -242,6 +234,14 @@ h5 {
     height: 100px;
     object-fit: cover;
     padding-right: 10px;
+}
+
+.popular-item .hotel-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 3px;
 }
 
 #activities-content {
