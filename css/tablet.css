@@ -12,9 +12,14 @@ figure {
     margin: 0px;
 }
 
-p,
 a {
     color: black;
+    font-family: Raleway;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+p {
     font-family: Raleway;
     font-size: 14px;
     text-decoration: none;
@@ -196,15 +201,15 @@ h5 {
     margin: 3px 0px 3px 0px;
 }
 
-.star-rating{
+.star-rating {
     display: inline-flex;
 }
 
-.blue-stars{
-    color:#0065FC;
+.blue-stars {
+    color: #0065FC;
 }
 
-.grey-stars{
+.grey-stars {
     color: #DFDDDD;
     margin-left: 4px;
 }
@@ -336,7 +341,7 @@ footer a {
     line-height: 2.5;
 }
 
-a:active{
+a:active {
     color: #0065FC;
 }
 

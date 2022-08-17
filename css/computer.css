@@ -12,9 +12,14 @@ figure {
     margin: 0px;
 }
 
-p,
 a {
     color: black;
+    font-family: Raleway;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+p {
     font-family: Raleway;
     font-size: 14px;
     text-decoration: none;
@@ -82,7 +87,7 @@ h5 {
     background-color: #0065FC;
     border-width: 0px;
     padding: 3px;
-    height: 50px;    
+    height: 50px;
     cursor: pointer;
 }
 
@@ -195,15 +200,15 @@ h5 {
     margin: 3px 0px 3px 0px;
 }
 
-.star-rating{
+.star-rating {
     display: inline-flex;
 }
 
-.blue-stars{
-    color:#0065FC;
+.blue-stars {
+    color: #0065FC;
 }
 
-.grey-stars{
+.grey-stars {
     color: #DFDDDD;
     margin-left: 4px;
 }
@@ -267,11 +272,12 @@ h5 {
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 15px; 
+    margin-left: 15px;
     height: 300px;
 }
 
 .long-activity-picture {
+    object-position: 40% 50%;
     border-radius: 10px 10px 0px 0px;
     width: 215px;
     height: 270px;
@@ -280,6 +286,7 @@ h5 {
 }
 
 .medium-activity-picture {
+    object-position: 50% 45%;
     border-radius: 10px 10px 0px 0px;
     width: 215px;
     height: 110px;
@@ -288,6 +295,7 @@ h5 {
 }
 
 .small-activity-picture {
+    object-position: 50% 10%;
     border-radius: 10px 10px 0px 0px;
     width: 215px;
     height: 80px;
@@ -322,7 +330,7 @@ h5 {
     cursor: pointer;
 }
 
-#activities-nav h5{
+#activities-nav h5 {
     position: relative;
     top: 5px;
     left: 10px;
@@ -383,7 +391,7 @@ footer a {
     line-height: 2.5;
 }
 
-a:active{
+a:active {
     color: #0065FC;
 }
 
