@@ -14,8 +14,10 @@ figure {
 
 p,
 a {
+    color: black;
     font-family: Raleway;
     font-size: 14px;
+    text-decoration: none;
 }
 
 h2,
@@ -194,6 +196,19 @@ h5 {
     margin: 3px 0px 3px 0px;
 }
 
+.star-rating{
+    display: inline-flex;
+}
+
+.blue-stars{
+    color:#0065FC;
+}
+
+.grey-stars{
+    color: #DFDDDD;
+    margin-left: 4px;
+}
+
 #accommodation-show-more {
     position: relative;
     left: 5px;
@@ -233,6 +248,7 @@ h5 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    gap: 3%;
 }
 
 .long-activity-picture,
@@ -258,6 +274,7 @@ h5 {
 .small-activity-card h5 {
     text-align: center;
     margin: 10px 0px 10px 0px;
+    padding-bottom: 10px;
 }
 
 footer {
@@ -317,6 +334,10 @@ footer a {
 
 .filter-item .fa-solid::before {
     line-height: 2.5;
+}
+
+a:active{
+    color: #0065FC;
 }
 
 .accommodation-item:hover,
