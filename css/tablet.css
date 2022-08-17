@@ -341,6 +341,10 @@ footer a {
     line-height: 2.5;
 }
 
+li:active{
+    color: #0065FC;
+}
+
 a:active {
     color: #0065FC;
 }
