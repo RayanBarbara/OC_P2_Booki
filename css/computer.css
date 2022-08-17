@@ -79,9 +79,6 @@ h5 {
 }
 
 #search-button-text {
-    position: relative;
-    bottom: 2px;
-    left: 10px;
     color: #fff;
     font-weight: 700;
     background-color: #0065FC;
