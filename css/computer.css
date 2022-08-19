@@ -1,13 +1,16 @@
+/*Erase the body's margin to fully extend the footer*/
 body {
     margin: 0px;
 }
 
+/*Use flex to horizontally align the navigation links and the logo*/
 header {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
 }
 
+/*Erase the figure's margin to not influence the images positioning*/
 figure {
     margin: 0px;
 }
@@ -32,6 +35,7 @@ h5 {
     font-family: Raleway;
 }
 
+/*Re-size and position BOOKI's logo*/
 #logo {
     position: relative;
     left: 5px;
@@ -40,6 +44,7 @@ h5 {
     height: 35px;
 }
 
+/*Use margin to adjust the space between the navigation links and also the screen's edge*/
 .nav-button {
     color: black;
     font-size: 14px;
@@ -60,8 +65,8 @@ h5 {
     padding: 10px 0px 0px 15px;
 }
 
+/*Use overflow to hide the background color of the search button and location icon which exceeds*/
 #search-form {
-
     border: 1px solid #F2F2F2;
     border-radius: 13px;
     height: 41px;
@@ -78,6 +83,7 @@ h5 {
     border-width: 0px;
 }
 
+/*Style search bar button*/
 #search-button-text {
     color: #fff;
     font-weight: 700;
@@ -88,25 +94,25 @@ h5 {
     cursor: pointer;
 }
 
+/*Hide the search button with the magnifying glass icon*/
 #search-button-icon {
     display: none;
 }
 
-#search-form .fa-magnifying-glass {
-    visibility: hidden;
-}
-
+/*Use flex to horizontally align and center the text and the filter's items*/
 #filter-content {
     display: flex;
     align-items: center;
     padding: 10px 0px 0px 15px;
 }
 
+/*Erase the list tag style and use flex to align horizontally and not vertically the filter's items*/
 #filter-nav {
     display: flex;
     list-style: none;
 }
 
+/*Style the filter's item style*/
 .filter-item {
     font-family: Raleway;
     font-size: 14px;
@@ -121,6 +127,7 @@ h5 {
     cursor: pointer;
 }
 
+/*Position, re-size and style the filter's items icons and their background*/
 .filter-item .fa-solid {
     position: relative;
     right: 6px;
@@ -130,6 +137,7 @@ h5 {
     border-radius: 20px;
     height: 32px;
     width: 30px;
+    /*Put image left of the text*/
     float: left;
 }
 
@@ -146,43 +154,53 @@ h5 {
     padding-left: 15px;
 }
 
+/*Use display to align horizontally both the two elements of 'Accommodation' and 'Most popular'*/
 #accommodation-content {
     display: flex;
     flex-flow: row wrap;
     margin: 0px 15px 0px 15px;
 }
 
+/*Use flex to let this element take 65% of the width of the screen*/
 #accommodation-city {
     flex: 1 1 65%;
     background-color: #F2F2F2;
     border-radius: 10px;
+    /*Add some space with the most popular element*/
     margin-right: 15px;
 }
 
+/*Use display to align horizontally and space evenly the accommodations room cards*/
 #accommodation-nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
+/*Styling of the accommodations room cards with limited width for picture*/
 .accommodation-item {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
     margin: 0px 1% 18px 1%;
+    /*Use padding to create the white borders*/
     padding: 4px 8px 4px 8px;
     max-width: 180px;
     cursor: pointer;
 }
 
+/*Styling of the accommodations room's image*/
 .accommodation-picture {
     border-radius: 10px 10px 0px 0px;
+    /*Delete some margin of image to equalize the border */
     margin-left: -4px;
     width: 180px;
     height: 100px;
+    /*Re-size image to fit its container*/
     object-fit: cover;
 }
 
+/*Align vertically and space the information of the accommodation room*/
 .accommodation-item .hotel-information {
     display: inline-flex;
     flex-direction: column;
@@ -197,6 +215,8 @@ h5 {
     margin: 3px 0px 3px 0px;
 }
 
+
+/*Use inline-flex to align grey stars with blue stars*/
 .star-rating {
     display: inline-flex;
 }
@@ -210,6 +230,7 @@ h5 {
     margin-left: 4px;
 }
 
+/*Position 'Show more' button*/
 #accommodation-show-more {
     position: relative;
     left: 5px;
@@ -217,17 +238,20 @@ h5 {
     cursor: pointer;
 }
 
+/*Use flex to let this element take 30% of the width of the screen*/
 #popular-content {
     flex: 1 2 30%;
     background-color: #F2F2F2;
     border-radius: 10px;
 }
 
+/*Align horizontally the container title and the back stars while spacing them at each end of the container*/
 #popular-head {
     display: flex;
     justify-content: space-between;
 }
 
+/*Style and position the black star icon*/
 #popular-head .fa-solid {
     color: black;
     position: relative;
@@ -235,6 +259,7 @@ h5 {
     right: 10px;
 }
 
+/*Styling of the accommodations room cards with limited width for picture*/
 .popular-item {
     background-color: white;
     border-radius: 10px;
@@ -245,6 +270,7 @@ h5 {
     cursor: pointer;
 }
 
+/*Styling of the popular room's image*/
 .popular-picture {
     float: left;
     border-radius: 10px 0px 0px 10px;
@@ -254,10 +280,12 @@ h5 {
     padding-right: 10px;
 }
 
+/*Align vertically and space the information of the accommodation room*/
 .popular-item .hotel-information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*Use height:100% to allow the information to use all the vertical space*/
     height: 100%;
 }
 
@@ -265,24 +293,31 @@ h5 {
     padding-left: 15px;
 }
 
+/*Align vertically activities items before horizontally centering them and vertically spacing them*/
 #activities-nav {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
     margin-left: 15px;
+    /*Limit the height of the navigation menu, otherwise cards will be one under another one*/
     height: 300px;
 }
 
+/*Style the image who are inside a big-sized container*/
 .long-activity-picture {
+    /*Re-position the image within its activity card container*/
     object-position: 40% 50%;
     border-radius: 10px 10px 0px 0px;
+    /*Determine image dimension so that it's neither too big or too small*/
     width: 215px;
     height: 270px;
+    /*Make the image slightly more bright*/
     filter: brightness(105%);
     object-fit: cover;
 }
 
+/*Style the image who are inside a medium-sized container*/
 .medium-activity-picture {
     object-position: 50% 45%;
     border-radius: 10px 10px 0px 0px;
@@ -292,6 +327,7 @@ h5 {
     object-fit: cover;
 }
 
+/*Style the image who are inside a small-sized container*/
 .small-activity-picture {
     object-position: 50% 10%;
     border-radius: 10px 10px 0px 0px;
@@ -301,33 +337,31 @@ h5 {
     object-fit: cover;
 }
 
+/*Style a big-sized container*/
 .long-activity-card {
-    flex-basis: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
-    max-width: 215px;
-    max-height: 300px;
     cursor: pointer;
 }
 
+/*Style a medium-sized container*/
 .medium-activity-card {
+    /*Let the container spread up to 63% of the height*/
     flex-basis: 63%;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
-    max-width: 215px;
-    max-height: 140px;
     cursor: pointer;
 }
 
+/*Style a small-sized container*/
 .small-activity-card {
     flex-basis: 37%;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
-    max-width: 215px;
-    max-height: 130px;
     cursor: pointer;
 }
 
+/*Position activities cards' name while adding some white space with the padding*/
 #activities-nav h5 {
     position: relative;
     top: 5px;
@@ -336,11 +370,15 @@ h5 {
     padding-bottom: 10px;
 }
 
+/*Align horizontally footer's elements*/
 footer {
     display: flex;
+    /*Add some blank space to the right so that the footer's first element is not stuck on the edge*/
     padding-left: 5%;
+    /*Add some space between each footer's elements*/
     gap: 15%;
     background-color: #F2F2F2;
+    /*Add some blank space between the activities part and the footer*/
     margin-top: 30px;
 }
 
@@ -349,6 +387,7 @@ footer a {
     text-decoration: none;
 }
 
+/*Erase list style and also padding so that the links below are vertically aligned*/
 .footer-list {
     list-style: none;
     padding: 0px;
@@ -358,16 +397,19 @@ footer a {
     margin-top: 5px;
 }
 
+/*Change navigation link color and add a blue line when we hover on them*/
 .nav-button:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 27px;
 }
 
+/*Don't let outline appears when we write on the search bar*/
 #search-input:focus {
     outline: none;
 }
 
+/*Style search bar placeholder*/
 #search-input::placeholder {
     color: black;
     font-family: Raleway;
@@ -375,12 +417,26 @@ footer a {
     font-weight: 700;
 }
 
-#search-button-text:hover,
-#search-button-text:active {
+/*Change the search button background color when we hover on it*/
+#search-button-text:hover {
     background-color: #0065FCB7;
 }
 
+/*Change the search button background color and text color when we click on it*/
+#search-button-text:active {
+    background-color: #0065FCB7;
+    color: #0065FC;
+}
+
+/*Change the filter's items background color and increase their size when we hover on it*/
 .filter-item:hover {
+    background-color: #DEEBFF;
+    transform: scale(1.1);
+}
+
+/*Change the filter's items text color, its background color and increase their size when we click on it*/
+.filter-item:active {
+    color: #0065FC;
     background-color: #DEEBFF;
     transform: scale(1.1);
 }
@@ -389,14 +445,12 @@ footer a {
     line-height: 2.5;
 }
 
-li:active{
-    color: #0065FC;
-}
-
+/*Change links color when we click on them (specially made for hotel information and activities cards' titles)*/
 a:active {
     color: #0065FC;
 }
 
+/*Change the different cards background color and increase their size when we hover on them*/
 .accommodation-item:hover,
 .popular-item:hover,
 .long-activity-card:hover,
@@ -406,11 +460,13 @@ a:active {
     transform: scale(1.03);
 }
 
+/*Change the color of show more button and footer's links when we hover on them*/
 #accommodation-show-more:hover,
 footer a:hover {
     color: #0065FC;
 }
 
+/*Temporaries media queries that increase the space between accommodations cards so that there can only be three of them on one row*/
 @media screen and (min-width: 1250px) {
     .accommodation-item {
         flex: 1 1 25%;

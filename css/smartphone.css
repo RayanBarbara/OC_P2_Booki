@@ -1,17 +1,18 @@
+/*Erase the body's margin and padding to fully extend the footer's*/
 body {
     margin: 0px;
-    padding: 0px;
 }
 
+/*Use flex to horizontally align the navigation links and the logo*/
 header {
     display: flex;
     flex-flow: column wrap;
     padding-top: 30px;
 }
 
+/*Erase the figure's margin to not influence the images positioning*/
 figure {
     margin: 0px;
-    padding: 0px;
 }
 
 a {
@@ -34,6 +35,7 @@ h5 {
     font-family: Raleway;
 }
 
+/*Re-size and position BOOKI's logo*/
 #logo {
     position: relative;
     left: 42%;
@@ -41,11 +43,13 @@ h5 {
     height: 55px;
 }
 
+/*Align horizontally the navigational links*/
 #nav-menu {
     display: flex;
     flex-flow: row wrap;
 }
 
+/*Use flex to let navigational links takes all the width of the screen*/
 .nav-button {
     flex: 1;
     color: black;
@@ -76,6 +80,7 @@ h5 {
     padding: 15px 0px 0px 15px;
 }
 
+/*Use overflow to hide the background color of the search button and location icon which exceeds*/
 #search-form {
     border: 1px solid #F2F2F2;
     border-radius: 13px;
@@ -93,10 +98,12 @@ h5 {
     border-width: 0px;
 }
 
+/*Hide the search button with the text*/
 #search-button-text {
     display: none;
 }
 
+/*Style search bar button*/
 #search-button-icon {
     color: #fff;
     background-color: #0065FC;
@@ -106,20 +113,16 @@ h5 {
     cursor: pointer;
 }
 
+/*Position magnifying glass' icon*/
 #search-form .fa-magnifying-glass {
     position: relative;
     bottom: 4px;
-    visibility: visible;
 }
 
-#search-button p {
-    visibility: collapse;
-}
-
+/*Use flex to vertically align the text and the filter's items*/
 #filter-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 10px 0px 0px 15px;
 }
 
@@ -127,6 +130,7 @@ h5 {
     margin: 10px 0px 5px 0px;
 }
 
+/*Erase the list tag style and use flex to align horizontally and not vertically the filter's items*/
 #filter-nav {
     display: flex;
     flex-flow: row wrap;
@@ -134,6 +138,7 @@ h5 {
     list-style: none;
 }
 
+/*Style the filter's item style*/
 .filter-item {
     font-family: Raleway;
     font-size: 14px;
@@ -149,6 +154,7 @@ h5 {
     cursor: pointer;
 }
 
+/*Position, re-size and style the filter's items icons and their background*/
 .filter-item .fa-solid {
     position: relative;
     right: 6px;
@@ -174,14 +180,17 @@ h5 {
     padding-left: 10px;
 }
 
+/*Align vertically most popular and accommodation elements*/
 #accommodation-content {
     display: flex;
     flex-flow: column wrap;
 }
 
+/*Align vertically content with flex-flow*/
 #accommodation-city {
     display: flex;
     flex-flow: column wrap;
+    /*Change element order and place it behind the most popular one*/
     order: 2;
     background-color: white;
     border-radius: 0px;
@@ -189,10 +198,12 @@ h5 {
     padding: 0px 10px 0px 10px;
 }
 
+/*Center accommodation room cards*/
 #accommodation-nav {
     align-self: center;
 }
 
+/*Styling of the accommodations room cards*/
 .accommodation-item {
     background-color: white;
     border-radius: 10px;
@@ -202,10 +213,12 @@ h5 {
     cursor: pointer;
 }
 
+/*Styling of the accommodations room's image*/
 .accommodation-picture {
     border-radius: 10px 10px 0px 0px;
     width: 300px;
     height: 100px;
+    /*Re-size image to fit its container*/
     object-fit: cover;
 }
 
@@ -221,6 +234,7 @@ h5 {
     margin: 3px 0px 3px 0px;
 }
 
+/*Use inline-flex to align grey stars with blue stars*/
 .star-rating {
     display: inline-flex;
 }
@@ -234,6 +248,7 @@ h5 {
     margin-left: 4px;
 }
 
+/*Position 'Show more' button*/
 #accommodation-show-more {
     position: relative;
     right: 20%;
@@ -244,9 +259,11 @@ h5 {
     cursor: pointer;
 }
 
+/*Align vertically content with flex-flow*/
 #popular-content {
     display: flex;
     flex-flow: column wrap;
+    /*Change order of the element to put it before accommodations*/
     order: 1;
     background-color: #F2F2F2;
     border-radius: 0px;
@@ -254,11 +271,13 @@ h5 {
     margin: 0px;
 }
 
+/*Align horizontally the container title and the back stars while spacing them at each end of the container*/
 #popular-head {
     display: inline-flex;
     justify-content: space-between;
 }
 
+/*Style and position the black star icon*/
 #popular-head .fa-solid {
     color: black;
     position: relative;
@@ -266,6 +285,7 @@ h5 {
     right: 10px;
 }
 
+/*Styling of the most popular room's image*/
 .popular-item {
     background-color: white;
     border-radius: 10px;
@@ -276,7 +296,9 @@ h5 {
     cursor: pointer;
 }
 
+/*Styling of the most popular room's image*/
 .popular-picture {
+    /*Put image left of the text*/
     float: left;
     border-radius: 10px 0px 0px 10px;
     padding-right: 10px;
@@ -285,23 +307,28 @@ h5 {
     object-fit: cover;
 }
 
+/*Align vertically and space the information of the accommodation room*/
 .popular-item .hotel-information {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*Use height:100% to allow the information to use all the vertical space*/
     height: 100%;
 }
 
+/*Align vertically activities part's elements with flex-direction*/
 #activities-content {
     display: flex;
     flex-direction: column;
     padding-left: 10px;
 }
 
+/*Center activities cards*/
 #activities-nav {
     align-self: center;
 }
 
+/*Style the activities' image who are inside the containers*/
 .long-activity-picture,
 .medium-activity-picture,
 .small-activity-picture {
@@ -311,6 +338,7 @@ h5 {
     object-fit: cover;
 }
 
+/*Style the activities' containers*/
 .long-activity-card,
 .medium-activity-card,
 .small-activity-card {
@@ -321,6 +349,7 @@ h5 {
     cursor: pointer;
 }
 
+/*Position activities cards' name while adding some white space with the padding*/
 .long-activity-card h5,
 .medium-activity-card h5,
 .small-activity-card h5 {
@@ -330,6 +359,7 @@ h5 {
     margin: 0px 0px 5px 0px;
 }
 
+/*Align vertically footer's elements before adding a gap between them*/
 footer {
     display: flex;
     flex-direction: column;
@@ -344,12 +374,13 @@ footer a {
     text-decoration: none;
 }
 
+/*Align vertically footer's elements with flex-flow*/
 .footer-nav {
     display: flex;
     flex-flow: column wrap;
-    list-style: none;
 }
 
+/*Erase list tag's default style and also padding to align vertically links with headers*/
 .footer-list {
     list-style: none;
     padding: 0px;
@@ -359,15 +390,18 @@ footer a {
     margin-top: 6px;
 }
 
+/*Change navigation link color and add a blue underline when we hover on them*/
 .nav-button:hover {
     color: #0065FC;
     border-bottom: 2px solid #0065FC;
 }
 
+/*Don't let outline appears when we write on the search bar*/
 #search-input:focus {
     outline: none;
 }
 
+/*Style search bar placeholder*/
 #search-input::placeholder {
     color: black;
     font-family: Raleway;
@@ -375,29 +409,40 @@ footer a {
     font-weight: 700;
 }
 
-#search-button-icon:hover,
-#search-button-icon:active {
+/*Change the search button background color and icon color when we hover on it*/
+#search-button-icon:hover {
     background-color: #0065FCB7;
 }
 
+/*Change the search button background color and icon color when we click on it*/
+#search-button-icon:active {
+    background-color: #0065FCB7;
+    color: #0065FC;
+}
 
+/*Change the filter's items background color and increase their size when we hover on it*/
 .filter-item:hover {
-    transform: scale(1.2);
     background-color: #DEEBFF;
+    transform: scale(1.2);
+}
+
+/*Change the filter's items text color, its background color and increase their size when we click on it*/
+.filter-item:active {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    transform: scale(1.2);
 }
 
 .filter-item .fa-solid::before {
     line-height: 2.5;
 }
 
-li:active{
-    color: #0065FC;
-}
-
+/*Change links color when we click on them (specially made for hotel information and activities cards' titles)*/
 a:active {
     color: #0065FC;
 }
 
+/*Change the different cards background color and increase their size when we hover on them*/
 .accommodation-item:hover,
 .popular-item:hover,
 .long-activity-card:hover,
@@ -407,6 +452,7 @@ a:active {
     transform: scale(1.01);
 }
 
+/*Change the color of show more button and footer's links when we hover on them*/
 #accommodation-show-more:hover,
 footer a:hover {
     color: #0065FC;
