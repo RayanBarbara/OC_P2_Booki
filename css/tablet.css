@@ -235,6 +235,7 @@ h5 {
 }
 
 #popular-head .fa-solid {
+    color: black;
     position: relative;
     top: 22px;
     right: 10px;
