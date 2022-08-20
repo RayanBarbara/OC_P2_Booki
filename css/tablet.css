@@ -108,7 +108,7 @@ h5 {
 #filter-content {
     display: flex;
     align-items: center;
-    padding: 10px 0px 0px 15px;
+    padding: 10px 0px 0px 10px;
 }
 
 /*Erase the list tag style and use flex to align horizontally and not vertically the filter's items*/
@@ -187,7 +187,7 @@ h5 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
-    margin: 0px 5px 10px 5px;
+    margin-bottom: 10px;
     padding: 4px;
     max-width: 210px;
     cursor: pointer;
