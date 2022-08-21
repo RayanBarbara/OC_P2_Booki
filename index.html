@@ -53,11 +53,9 @@
                 <i id="location-icon" class="fa-solid fa-location-dot"></i>
                 <input id="search-input" type="text" placeholder="Marseille, France" />
                 <!-- Search buttons with text and magnifying glass icon for the computer and tablet/iphone version respectively-->
-                <button id="search-button-text" type="submit">
-                    Search
-                </button>
-                <button id="search-button-icon" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <button id="search-button" type="submit">
+                    <span id="search-text">Search</span>
+                    <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
         </div>
@@ -80,321 +78,324 @@
         are available in this city</p>
 
     <!--Main content of the webpage, which is a list of the accommodations proposed by BOOKI-->
-    <main id="accommodation-content">
-        <!--Article containing all accommodations for a given city.-->
-        <article id="accommodation-city">
-            <h3 class="title">Accommodations in Marseille</h3>
-            <nav id="accommodation-nav">
+    <main>
+        <!--Section containing not only the all accommodations for a chosen city but also a selection of the most popular ones-->
+        <section id="accommodation-content">
+            <!--Article containing all accommodations for a given city.-->
+            <article id="accommodation-city">
+                <h3 class="title">Accommodations in Marseille</h3>
+                <nav id="accommodation-nav">
 
-                <!--Hotel room cards-->
-                <a href="#">
-                    <article class="accommodation-item">
-                        <figure>
-                            <img class="accommodation-picture" src="assets/Accommodations/Auberge_la_Cannebiere.jpg"
-                                alt="A picture of one of the hotel's room of Auberge la Cannebiere"
-                                title="Hotel room of Auberge la Cannebiere">
-                        </figure>
-                        <!--Information about hotel room-->
-                        <div class="hotel-information">
-                            <h5>Auberge la Cannebière</h5>
-                            <p>Night starting at <b>25€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                                <div class="grey-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <!--Hotel room cards-->
+                    <a href="#">
+                        <article class="accommodation-item">
+                            <figure>
+                                <img class="accommodation-picture" src="assets/Accommodations/Auberge_la_Cannebiere.jpg"
+                                    alt="A picture of one of the hotel's room of Auberge la Cannebiere"
+                                    title="Hotel room of Auberge la Cannebiere">
+                            </figure>
+                            <!--Information about hotel room-->
+                            <div class="hotel-information">
+                                <h5>Auberge la Cannebière</h5>
+                                <p>Night starting at <b>25€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                    <div class="grey-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </a>
 
-                <a href="#">
-                    <article class="accommodation-item">
-                        <figure>
-                            <img class="accommodation-picture" src="assets/Accommodations/Hotel_du_port.jpg"
-                                alt="A picture of one of the hotel's room of Hotel du port"
-                                title="Hotel room of Hotel du port">
-                        </figure>
-                        <div class="hotel-information">
-                            <h5>Hôtel du port</h5>
-                            <p>Night starting at <b>25€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <a href="#">
+                        <article class="accommodation-item">
+                            <figure>
+                                <img class="accommodation-picture" src="assets/Accommodations/Hotel_du_port.jpg"
+                                    alt="A picture of one of the hotel's room of Hotel du port"
+                                    title="Hotel room of Hotel du port">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Hôtel du port</h5>
+                                <p>Night starting at <b>25€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </a>
 
-                <a href="#">
-                    <article class="accommodation-item">
-                        <figure>
-                            <img class="accommodation-picture" src="assets/Accommodations/Les_mouettes_Hotel.jpg"
-                                alt="A picture of one of the hotel's room of Les mouettes Hotel"
-                                title="Hotel room of Les mouettes Hotel">
-                        </figure>
-                        <div class="hotel-information">
-                            <h5>Les mouettes Hotel</h5>
-                            <p>Night starting at <b>76€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                                <div class="grey-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#">
-                    <article class="accommodation-item">
-                        <figure>
-                            <img class="accommodation-picture" src="assets/Accommodations/Hotel_de_la_mer.jpg"
-                                alt="A picture of one of the hotel room of Hotel de la mer"
-                                title="Hotel room of Hotel de la mer">
-                        </figure>
-                        <div class="hotel-information">
-                            <h5>Hôtel de la mer</h5>
-                            <p>Night starting at <b>46€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                                <div class="grey-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <a href="#">
+                        <article class="accommodation-item">
+                            <figure>
+                                <img class="accommodation-picture" src="assets/Accommodations/Les_mouettes_Hotel.jpg"
+                                    alt="A picture of one of the hotel's room of Les mouettes Hotel"
+                                    title="Hotel room of Les mouettes Hotel">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Les mouettes Hotel</h5>
+                                <p>Night starting at <b>76€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                    <div class="grey-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </a>
 
-                <a href="#">
-                    <article class="accommodation-item">
-                        <figure>
-                            <img class="accommodation-picture" src="assets/Accommodations/Auberge_Le_Panier.jpg"
-                                alt="A picture of one of the hotel room of Auberge Le Panier"
-                                title="Hotel room of Auberge Le Panier">
-                        </figure>
-                        <div class="hotel-information">
-                            <h5>Auberge Le Panier</h5>
-                            <p>Night starting at <b>23€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                                <div class="grey-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="#">
-                    <article class="accommodation-item">
-                        <figure>
-                            <img class="accommodation-picture" src="assets/Accommodations/Hotel_chez_Amina.jpg"
-                                alt="A picture of one of the hotel room of Hotel chez Amina"
-                                title="Hotel room of Hotel chez Amina">
-                        </figure>
-                        <div class="hotel-information">
-                            <h5>Hôtel chez Amina</h5>
-                            <p>Night starting at <b>96€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <a href="#">
+                        <article class="accommodation-item">
+                            <figure>
+                                <img class="accommodation-picture" src="assets/Accommodations/Hotel_de_la_mer.jpg"
+                                    alt="A picture of one of the hotel room of Hotel de la mer"
+                                    title="Hotel room of Hotel de la mer">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Hôtel de la mer</h5>
+                                <p>Night starting at <b>46€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                    <div class="grey-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </a>
 
-            </nav>
+                    <a href="#">
+                        <article class="accommodation-item">
+                            <figure>
+                                <img class="accommodation-picture" src="assets/Accommodations/Auberge_Le_Panier.jpg"
+                                    alt="A picture of one of the hotel room of Auberge Le Panier"
+                                    title="Hotel room of Auberge Le Panier">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Auberge Le Panier</h5>
+                                <p>Night starting at <b>23€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                    <div class="grey-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
 
-            <h5 id="accommodation-show-more">Show more</h5>
-        </article>
+                    <a href="#">
+                        <article class="accommodation-item">
+                            <figure>
+                                <img class="accommodation-picture" src="assets/Accommodations/Hotel_chez_Amina.jpg"
+                                    alt="A picture of one of the hotel room of Hotel chez Amina"
+                                    title="Hotel room of Hotel chez Amina">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Hôtel chez Amina</h5>
+                                <p>Night starting at <b>96€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
 
-        <!--Aside containing the company's most popular accommodations for a given city-->
-        <aside id="popular-content">
-            <article id="popular-head">
-                <h3 class="title">Most popular</h3>
-                <i class="fa-solid fa-star fa-xm"></i>
+                </nav>
+
+                <h5 id="accommodation-show-more">Show more</h5>
             </article>
-            <nav id="popular-nav">
 
-                <!--Hotel room card-->
-                <a href="#">
-                    <article class="popular-item">
-                        <figure>
-                            <img class="popular-picture" src="assets/Accommodations/Morning_Sun_Hotel.jpg"
-                                alt="A picture of one of the hotel room of Morning Sun Hotel"
-                                title="Hotel room of Morning Sun Hotel">
-                        </figure>
-                        <div class="hotel-information">
-                            <h5>Morning Sun Hotel</h5>
-                            <p>Night starting at <b>128€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
+            <!--Aside containing the company's most popular accommodations for a given city-->
+            <aside id="popular-content">
+                <article id="popular-head">
+                    <h3 class="title">Most popular</h3>
+                    <i class="fa-solid fa-star fa-xm"></i>
+                </article>
+                <nav id="popular-nav">
+
+                    <!--Hotel room card-->
+                    <a href="#">
+                        <article class="popular-item">
+                            <figure>
+                                <img class="popular-picture" src="assets/Accommodations/Morning_Sun_Hotel.jpg"
+                                    alt="A picture of one of the hotel room of Morning Sun Hotel"
+                                    title="Hotel room of Morning Sun Hotel">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Morning Sun Hotel</h5>
+                                <p>Night starting at <b>128€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="popular-item">
+                            <figure>
+                                <img class="popular-picture"
+                                    src="assets/Accommodations/Au_coeur_de_leau_Bed_and_Breaskfast.jpg"
+                                    alt="A picture of one of the hotel room of Au coeur de l eau Bed and Breaskfast"
+                                    title="Hotel room of Au coeur de l eau Bed and Breaskfast">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Au coeur de l'eau Bed and Breakfast</h5>
+                                <p>Night starting at <b>71€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                    <div class="grey-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="popular-item">
+                            <figure>
+                                <img class="popular-picture" src="assets/Accommodations/Tout_bleu_et_Blanc_hotel.jpg"
+                                    alt="A picture of one of the hotel room of Tout bleu et Blanc hotel"
+                                    title="Hotel room of Tout bleu et Blanc hotel">
+                            </figure>
+                            <div class="hotel-information">
+                                <h5>Tout bleu et Blanc Hôtel</h5>
+                                <p>Night starting at <b>68€</b></p>
+                                <div class="star-rating">
+                                    <div class="blue-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                    <div class="grey-stars">
+                                        <i class="fa-solid fa-star fa-2xs"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                </nav>
+
+            </aside>
+        </section>
+
+        <!--Section listing, for a given location, all activities proposed by the website-->
+        <section id="activities-content">
+            <h3 class="title">Activities in Marseille</h3>
+            <nav id="activities-nav">
+
+                <!--Activity cards-->
+                <a href="#">
+                    <article class="long-activity-card">
+                        <figure>
+                            <img class="long-activity-picture" src="assets/Activities/Old_Port.jpg"
+                                alt="A picture of Old Port" title="Old Port">
+                        </figure>
+                        <h5>Old Port</h5>
                     </article>
                 </a>
 
                 <a href="#">
-                    <article class="popular-item">
+                    <article class="medium-activity-card">
                         <figure>
-                            <img class="popular-picture"
-                                src="assets/Accommodations/Au_coeur_de_leau_Bed_and_Breaskfast.jpg"
-                                alt="A picture of one of the hotel room of Au coeur de l eau Bed and Breaskfast"
-                                title="Hotel room of Au coeur de l eau Bed and Breaskfast">
+                            <img class="medium-activity-picture" src="assets/Activities/Pomegues_Fort.jpg"
+                                alt="A picture of Pomègues Fort" title="Pomègues Fort">
                         </figure>
-                        <div class="hotel-information">
-                            <h5>Au coeur de l'eau Bed and Breakfast</h5>
-                            <p>Night starting at <b>71€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                                <div class="grey-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <h5>Pomègues Fort</h5>
                     </article>
                 </a>
 
                 <a href="#">
-                    <article class="popular-item">
+                    <article class="small-activity-card">
                         <figure>
-                            <img class="popular-picture" src="assets/Accommodations/Tout_bleu_et_Blanc_hotel.jpg"
-                                alt="A picture of one of the hotel room of Tout bleu et Blanc hotel"
-                                title="Hotel room of Tout bleu et Blanc hotel">
+                            <img class="small-activity-picture" src="assets/Activities/Frioul_Island.jpg"
+                                alt="A picture of Frioul Island" title="Frioul Island">
                         </figure>
-                        <div class="hotel-information">
-                            <h5>Tout bleu et Blanc Hôtel</h5>
-                            <p>Night starting at <b>68€</b></p>
-                            <div class="star-rating">
-                                <div class="blue-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                                <div class="grey-stars">
-                                    <i class="fa-solid fa-star fa-2xs"></i>
-                                </div>
-                            </div>
-                        </div>
+                        <h5>Frioul Island</h5>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="long-activity-card">
+                        <figure>
+                            <img class="long-activity-picture" src="assets/Activities/Calanques_National_Park.jpg"
+                                alt="A picture of Calanques National Park" title="Calanques National Park">
+                        </figure>
+                        <h5>Calanques National Park</h5>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="small-activity-card">
+                        <figure>
+                            <img class="small-activity-picture" src="assets/Activities/Notre_dame_de_la_garde.jpg"
+                                alt="A picture of Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
+                        </figure>
+                        <h5>Notre-Dame-de-la-Garde</h5>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article class="medium-activity-card">
+                        <figure>
+                            <img class="medium-activity-picture" src="assets/Activities/Longchamp_Park.jpg"
+                                alt="A picture of Longchamp Park" title="Longchamp Park">
+                        </figure>
+                        <h5>Longchamp Park</h5>
                     </article>
                 </a>
 
             </nav>
-
-        </aside>
+        </section>
     </main>
-
-    <!--Section listing, for a given location, all activities proposed by the website-->
-    <section id="activities-content">
-        <h3 class="title">Activities in Marseille</h3>
-        <nav id="activities-nav">
-
-            <!--Activity cards-->
-            <a href="#">
-                <article class="long-activity-card">
-                    <figure>
-                        <img class="long-activity-picture" src="assets/Activities/Old_Port.jpg"
-                            alt="A picture of Old Port" title="Old Port">
-                    </figure>
-                    <h5>Old Port</h5>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="medium-activity-card">
-                    <figure>
-                        <img class="medium-activity-picture" src="assets/Activities/Pomegues_Fort.jpg"
-                            alt="A picture of Pomègues Fort" title="Pomègues Fort">
-                    </figure>
-                    <h5>Pomègues Fort</h5>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="small-activity-card">
-                    <figure>
-                        <img class="small-activity-picture" src="assets/Activities/Frioul_Island.jpg"
-                            alt="A picture of Frioul Island" title="Frioul Island">
-                    </figure>
-                    <h5>Frioul Island</h5>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="long-activity-card">
-                    <figure>
-                        <img class="long-activity-picture" src="assets/Activities/Calanques_National_Park.jpg"
-                            alt="A picture of Calanques National Park" title="Calanques National Park">
-                    </figure>
-                    <h5>Calanques National Park</h5>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="small-activity-card">
-                    <figure>
-                        <img class="small-activity-picture" src="assets/Activities/Notre_dame_de_la_garde.jpg"
-                            alt="A picture of Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
-                    </figure>
-                    <h5>Notre-Dame-de-la-Garde</h5>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="medium-activity-card">
-                    <figure>
-                        <img class="medium-activity-picture" src="assets/Activities/Longchamp_Park.jpg"
-                            alt="A picture of Longchamp Park" title="Longchamp Park">
-                    </figure>
-                    <h5>Longchamp Park</h5>
-                </article>
-            </a>
-
-        </nav>
-    </section>
 
     <!--Footer containing links for all kind of information-->
     <footer>

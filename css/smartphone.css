@@ -99,12 +99,12 @@ h5 {
 }
 
 /*Hide the search button with the text*/
-#search-button-text {
+#search-text {
     display: none;
 }
 
 /*Style search bar button*/
-#search-button-icon {
+#search-button {
     color: #fff;
     background-color: #0065FC;
     border-width: 0px;
@@ -410,12 +410,12 @@ footer a {
 }
 
 /*Change the search button background color and icon color when we hover on it*/
-#search-button-icon:hover {
+#search-button:hover {
     background-color: #0065FCB7;
 }
 
 /*Change the search button background color and icon color when we click on it*/
-#search-button-icon:active {
+#search-button:active {
     background-color: #0065FCB7;
     color: #0065FC;
 }
