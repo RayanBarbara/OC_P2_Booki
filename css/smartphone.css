@@ -79,30 +79,30 @@ h5 {
     border: 1px solid #F2F2F2;
     border-radius: 13px;
     width: max-content;
-  }
-  
-  #location-icon {
+}
+
+#location-icon {
     padding: 15px;
     border-radius: 13px 0px 0px 13px;
     background-color: #F2F2F2;
-  }
-  
-  #search-input {
-      background: none;
+}
+
+#search-input {
+    background: none;
     border-width: 0px;
     padding: 15px;
     margin: 0;
     flex: 1;
-  }
-  
-  #search-button {
+}
+
+#search-button {
     color: #fff;
     background-color: #0065FC;
     border-radius: 13px;
     border-width: 0px;
     padding: 15px;
     cursor: pointer;
-  }
+}
 
 /*Hide the search button with the text*/
 #search-text {
