@@ -75,48 +75,33 @@ h5 {
     font-size: 16px;
 }
 
-#search-content {
-    display: flex;
-    padding: 15px 0px 0px 15px;
-}
-
-/*Use overflow to hide the background color of the search button and location icon which exceeds*/
 #search-form {
     border: 1px solid #F2F2F2;
     border-radius: 13px;
-    height: 41px;
-    overflow: hidden;
+    width: max-content;
 }
 
 #location-icon {
     padding: 15px;
-    border-radius: 5px 0px 5px 0px;
+    border-radius: 13px 0px 0px 13px;
     background-color: #F2F2F2;
 }
 
 #search-input {
+    background: none;
     border-width: 0px;
+    padding: 15px;
+    margin: 0;
+    flex: 1;
 }
 
-/*Hide the search button with the text*/
-#search-text {
-    display: none;
-}
-
-/*Style search bar button*/
 #search-button {
     color: #fff;
     background-color: #0065FC;
+    border-radius: 13px;
     border-width: 0px;
-    height: 49px;
-    width: 40px;
+    padding: 15px;
     cursor: pointer;
-}
-
-/*Position magnifying glass' icon*/
-#search-form .fa-magnifying-glass {
-    position: relative;
-    bottom: 4px;
 }
 
 /*Use flex to vertically align the text and the filter's items*/
