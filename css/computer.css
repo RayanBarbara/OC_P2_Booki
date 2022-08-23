@@ -194,7 +194,7 @@ h5 {
     border-radius: 10px 10px 0px 0px;
     width: 180px;
     height: 100px;
-
+    object-fit: cover;
 }
 
 /*Align vertically and space the information of the accommodation room*/
