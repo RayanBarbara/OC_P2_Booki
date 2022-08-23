@@ -178,13 +178,12 @@ h5 {
     justify-content: space-evenly;
 }
 
-/*Styling of the accommodations room cards with limited width for picture*/
+/*Styling of the accommodations room cards*/
 .accommodation-item {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
     margin-bottom: 18px;
-    /*Use padding to create the white borders*/
     padding: 4px;
     width: max-content;
     cursor: pointer;
@@ -195,8 +194,7 @@ h5 {
     border-radius: 10px 10px 0px 0px;
     width: 180px;
     height: 100px;
-    /*Re-size image to fit its container*/
-    object-fit: cover;
+
 }
 
 /*Align vertically and space the information of the accommodation room*/
