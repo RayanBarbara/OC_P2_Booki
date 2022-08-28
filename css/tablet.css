@@ -56,8 +56,12 @@ h5 {
     padding: 15px 0px 0px 15px;
 }
 
-#introduction h4 {
+#introduction h2 {
     margin-bottom: 0px;
+}
+
+#introduction p {
+    margin-top: 5px;
 }
 
 #search-content {
@@ -124,7 +128,12 @@ h5 {
     text-align: center;
     margin-right: 30px;
     padding: 5px;
+    transform: scale(1.1);
     cursor: pointer;
+}
+
+.filter-name{
+    padding: 5px;
 }
 
 /*Position, re-size and style the filter's items icons and their background*/
@@ -147,7 +156,14 @@ h5 {
 }
 
 #information-text {
+    display: inline-flex;
+    width: 350px;
     padding-left: 15px;
+}
+
+.fa-circle-info{
+    position: relative;
+    top: 13px;
 }
 
 .title {
@@ -210,7 +226,7 @@ h5 {
 }
 
 .hotel-information p {
-    margin: 3px 0px 3px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 /*Use inline-flex to align grey stars with blue stars*/
