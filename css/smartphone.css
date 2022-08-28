@@ -68,11 +68,17 @@ h5 {
 
 #introduction h2 {
     font-size: 22px;
-    margin: 30px 0px 10px 0px;
+    margin: 30px 0px 0px 0px;
+    width: 300px;
 }
 
 #introduction p {
     font-size: 16px;
+    margin-top: 5px;
+}
+
+#search-content{
+    padding-left: 15px;
 }
 
 #search-form {
@@ -144,6 +150,10 @@ h5 {
     cursor: pointer;
 }
 
+.filter-name{
+    padding: 10px;
+}
+
 /*Position, re-size and style the filter's items icons and their background*/
 .filter-item .fa-solid {
     position: relative;
@@ -163,7 +173,15 @@ h5 {
 }
 
 #information-text {
+    display: inline-flex;
+    width: 300px;
     padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.fa-circle-info{
+    position: relative;
+    top: 13px;
 }
 
 .title {
@@ -217,11 +235,13 @@ h5 {
 }
 
 .hotel-information h5 {
+    font-size: 14px;
     margin: 0px;
 }
 
 .hotel-information p {
-    margin: 3px 0px 3px 0px;
+    font-size: 14px;
+    margin: 5px 0px 5px 0px;
 }
 
 /*Use inline-flex to align grey stars with blue stars*/
@@ -241,7 +261,7 @@ h5 {
 /*Position 'Show more' button*/
 #accommodation-show-more {
     position: relative;
-    right: 20%;
+    right: 30%;
     bottom: 30px;
     font-size: 16px;
     text-align: center;
@@ -343,6 +363,7 @@ h5 {
 .long-activity-card h5,
 .medium-activity-card h5,
 .small-activity-card h5 {
+    font-size: 15px;
     position: relative;
     left: 15px;
     top: 10px;
@@ -357,6 +378,10 @@ footer {
     background-color: #F2F2F2;
     margin-top: 30px;
     padding-left: 30px;
+}
+
+footer h4{
+    margin-bottom: 0px;
 }
 
 footer a {
@@ -374,6 +399,7 @@ footer a {
 .footer-list {
     list-style: none;
     padding: 0px;
+    margin-top: 10px;
 }
 
 .footer-item {
