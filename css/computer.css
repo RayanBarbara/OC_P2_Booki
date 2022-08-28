@@ -57,8 +57,12 @@ h5 {
     padding: 15px 0px 0px 15px;
 }
 
-#introduction h4 {
+#introduction h2 {
     margin-bottom: 0px;
+}
+
+#introduction p {
+    margin-top: 5px;
 }
 
 #search-content {
@@ -91,6 +95,7 @@ h5 {
     background-color: #0065FC;
     border-width: 0px;
     padding: 3px;
+    width: 70px;
     height: 50px;
     cursor: pointer;
 }
@@ -125,7 +130,12 @@ h5 {
     text-align: center;
     margin-right: 30px;
     padding: 5px;
+    transform: scale(1.1);
     cursor: pointer;
+}
+
+.filter-name{
+    padding: 5px;
 }
 
 /*Position, re-size and style the filter's items icons and their background*/
@@ -148,7 +158,14 @@ h5 {
 }
 
 #information-text {
+    display: inline-flex;
+    width: 350px;
     padding-left: 15px;
+}
+
+.fa-circle-info{
+    position: relative;
+    top: 13px;
 }
 
 .title {
@@ -209,7 +226,7 @@ h5 {
 }
 
 .hotel-information p {
-    margin: 3px 0px 3px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 
@@ -297,16 +314,13 @@ h5 {
     justify-content: space-between;
     align-items: center;
     margin-left: 15px;
-    /*Limit the height of the navigation menu, otherwise cards will be one under another one*/
     height: 300px;
 }
 
 /*Style the image who are inside a big-sized container*/
 .long-activity-picture {
-    /*Re-position the image within its activity card container*/
     object-position: 40% 50%;
     border-radius: 10px 10px 0px 0px;
-    /*Determine image dimension so that it's neither too big or too small*/
     width: 215px;
     height: 270px;
     /*Make the image slightly more bright*/
@@ -336,6 +350,7 @@ h5 {
 
 /*Style a big-sized container*/
 .long-activity-card {
+    flex-basis: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
     cursor: pointer;
@@ -343,7 +358,6 @@ h5 {
 
 /*Style a medium-sized container*/
 .medium-activity-card {
-    /*Let the container spread up to 63% of the height*/
     flex-basis: 63%;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px #F2F2F2;
