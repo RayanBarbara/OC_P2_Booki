@@ -89,6 +89,7 @@ h5 {
     flex: 1;
 }
 
+/*Style search bar button*/
 #search-button {
     color: #fff;
     background-color: #0065FC;
@@ -150,20 +151,18 @@ h5 {
     float: left;
 }
 
-#information-icon {
-    color: #0065FC;
-    margin-right: 5px;
-}
-
 #information-text {
     display: inline-flex;
     width: 350px;
     padding-left: 15px;
 }
 
+/*Position and style information icon */
 .fa-circle-info{
     position: relative;
     top: 13px;
+    color: #0065FC;
+    margin-right: 5px;
 }
 
 .title {

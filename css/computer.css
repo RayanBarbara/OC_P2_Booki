@@ -70,11 +70,11 @@ h5 {
     padding: 10px 0px 0px 15px;
 }
 
-/*Use overflow to hide the background color of the search button and location icon which exceeds*/
 #search-form {
     border: 1px solid #F2F2F2;
     border-radius: 13px;
     height: 41px;
+    /*Use overflow to hide the background color of the search button and location icon which exceeds*/
     overflow: hidden;
 }
 
@@ -148,24 +148,23 @@ h5 {
     border-radius: 20px;
     height: 32px;
     width: 30px;
-    /*Put image left of the text*/
+    /*Put the image to the left of the text*/
     float: left;
-}
-
-#information-icon {
-    color: #0065FC;
-    margin-right: 5px;
 }
 
 #information-text {
     display: inline-flex;
+    /*Limit writing space to artificially skip a line*/
     width: 350px;
     padding-left: 15px;
 }
 
+/*Position and style information icon */
 .fa-circle-info{
     position: relative;
     top: 13px;
+    color: #0065FC;
+    margin-right: 5px;
 }
 
 .title {
