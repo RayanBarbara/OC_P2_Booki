@@ -475,3 +475,29 @@ a:active {
 footer a:hover {
     color: #0065FC;
 }
+
+@media screen and (min-width: 1170px) {
+    .accommodation-item {
+        flex: 1 1 25%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px #F2F2F2;
+        margin: 0px 20px 18px 20px;
+        padding: 4px;
+        max-width: 180px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1410px) {
+    .accommodation-item {
+        flex: 1 1 25%;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px #F2F2F2;
+        margin: 0px 50px 18px 50px;
+        padding: 4px;
+        max-width: 180px;
+        cursor: pointer;
+    }
+}
