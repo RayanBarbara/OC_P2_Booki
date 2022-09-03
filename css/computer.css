@@ -441,14 +441,14 @@ footer a {
 /*Change the filter's items background color and increase their size when we hover on it*/
 .filter-item:hover {
     background-color: #DEEBFF;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 /*Change the filter's items text color, its background color and increase their size when we click on it*/
 .filter-item:active {
     color: #0065FC;
     background-color: #DEEBFF;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .filter-item .fa-solid::before {
